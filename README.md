@@ -1,4 +1,4 @@
-# IPFS Backup for JIRA Issu
+# IPFS Backup for JIRA Issue
 
 ![](./images/ipfs-backup-jira-issue.png)
 

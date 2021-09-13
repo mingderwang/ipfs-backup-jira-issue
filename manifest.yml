@@ -12,6 +12,7 @@ app:
   name: ipfs-backup-jira-issue
 permissions:
   scopes:
+    - 'storage:app'
     - 'read:jira-work'
     - 'read:confluence-content.all'
     - 'write:jira-work'

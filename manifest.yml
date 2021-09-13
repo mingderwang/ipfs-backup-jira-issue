@@ -1,0 +1,26 @@
+modules:
+  jira:issuePanel:
+    - key: ipfs-backup-jira-issue-hello-world-panel
+      function: main
+      title: IPFS Backup Jira Issue
+      icon: https://developer.atlassian.com/platform/forge/images/icons/issue-panel-icon.svg
+  function:
+    - key: main
+      handler: index.run
+app:
+  id: ari:cloud:ecosystem::app/ea9d7d6d-fa91-4032-ad1b-169116708edc
+  name: ipfs-backup-jira-issue
+permissions:
+  scopes:
+    - 'read:jira-work'
+    - 'read:confluence-content.all'
+    - 'write:jira-work'
+    - 'write:confluence-content'
+    - 'read:jira-user'
+    - 'manage:jira-project'
+    - 'manage:jira-configuration'
+    - 'read:confluence-space.summary'
+  external:
+    fetch:
+      backend:
+        - 'https://ipfs-proxy-server.muzamint.com/'
